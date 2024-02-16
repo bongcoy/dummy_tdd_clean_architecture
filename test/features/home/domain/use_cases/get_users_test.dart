@@ -7,9 +7,9 @@
 // Answer: Use Mocktail's API
 
 import 'package:dartz/dartz.dart';
-import 'package:dummy_tdd_clean/features/home/domain/entities/user.dart';
-import 'package:dummy_tdd_clean/features/home/domain/repositories/auth_repo.dart';
-import 'package:dummy_tdd_clean/features/home/domain/use_cases/get_users.dart';
+import 'package:dummy_tdd_clean/features/authentication/domain/entities/user.dart';
+import 'package:dummy_tdd_clean/features/authentication/domain/repositories/auth_repo.dart';
+import 'package:dummy_tdd_clean/features/authentication/domain/use_cases/get_users.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 

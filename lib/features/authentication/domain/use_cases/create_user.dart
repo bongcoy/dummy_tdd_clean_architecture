@@ -1,6 +1,6 @@
 import 'package:dummy_tdd_clean/core/usecase/usecase.dart';
 import 'package:dummy_tdd_clean/core/utilities/typedef.dart';
-import 'package:dummy_tdd_clean/features/home/domain/repositories/auth_repo.dart';
+import 'package:dummy_tdd_clean/features/authentication/domain/repositories/auth_repo.dart';
 import 'package:equatable/equatable.dart';
 
 class CreateUser extends UseCaseWithParams<void, CreateUserParams> {
