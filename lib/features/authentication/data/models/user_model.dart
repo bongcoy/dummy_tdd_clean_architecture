@@ -19,19 +19,19 @@ class UserModel extends User {
           createdAt: DateTime.now(),
         );
 
-  factory UserModel.fromRawJson(String str) =>
-      UserModel.fromJson(json.decode(str));
+  factory UserModel.fromJson(String str) =>
+      UserModel.fromMap(json.decode(str));
 
-  String toRawJson() => json.encode(toJson());
+  String toJson() => json.encode(toMap());
 
-  factory UserModel.fromJson(DataMap json) => UserModel(
+  factory UserModel.fromMap(DataMap json) => UserModel(
         id: json["id"],
         name: json["name"],
         avatar: json["avatar"],
         createdAt: DateTime.parse(json["createdAt"]),
       );
 
-  DataMap toJson() => {
+  DataMap toMap() => {
         "id": id,
         "name": name,
         "avatar": avatar,
