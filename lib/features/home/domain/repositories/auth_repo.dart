@@ -1,5 +1,3 @@
-import 'package:dartz/dartz.dart';
-import 'package:dummy_tdd_clean/core/errors/failure.dart';
 import 'package:dummy_tdd_clean/core/utilities/typedef.dart';
 import 'package:dummy_tdd_clean/features/home/domain/entities/user.dart';
 
