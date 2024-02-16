@@ -1,4 +1,4 @@
-import 'package:dummy_tdd_clean/home/presentation/pages/home_page.dart';
+import 'package:dummy_tdd_clean/features/home/presentation/pages/home_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
