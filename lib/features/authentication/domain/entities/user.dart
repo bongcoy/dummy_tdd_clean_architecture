@@ -15,12 +15,12 @@ class User extends Equatable {
 
   User.empty()
       : this(
-    id: '_empty.id',
-    name: '_empty.name',
-    avatar: '_empty.avatar',
-    createdAt: DateTime.now(),
-  );
+          id: '_empty.id',
+          name: '_empty.name',
+          avatar: '_empty.avatar',
+          createdAt: DateTime.now(),
+        );
 
   @override
-  List<Object?> get props => throw UnimplementedError();
+  List<Object?> get props => [id, name, avatar, createdAt];
 }
