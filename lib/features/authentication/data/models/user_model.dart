@@ -16,7 +16,7 @@ class UserModel extends User {
           id: '_empty.id',
           name: '_empty.name',
           avatar: '_empty.avatar',
-          createdAt: DateTime.now(),
+          createdAt: DateTime.parse('2024-02-14T05:45:40.252Z'),
         );
 
   factory UserModel.fromJson(String str) =>
