@@ -22,5 +22,5 @@ class User extends Equatable {
         );
 
   @override
-  List<Object?> get props => [id, name, avatar, createdAt];
+  List<Object?> get props => [id, name, avatar];
 }
