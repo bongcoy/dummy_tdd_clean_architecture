@@ -76,4 +76,15 @@ void main(){
     });
   });
 
+  group('copyWith', () {
+    test('should return a [UserModel] with different data', () {
+      // 1. Arrange
+      // 2. Act
+      final result = testModel.copyWith(name: 'brader');
+      // 3. Assert
+      expect(result.name, equals('brader'));
+      expect(result, isNot(testModel));
+    });
+  });
+
 }
