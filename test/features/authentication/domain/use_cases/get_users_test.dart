@@ -1,5 +1,5 @@
 // Unit Test to-do:
-// 1. What does this unit (CreateUser class) depend (take in it's constructors) on?
+// 1. What does this unit (GetUsers class) depend (take in it's constructors) on?
 // Answer: AuthRepo
 // 2. How can we create a fake version of the dependency?
 // Answer: Use Mocktail
