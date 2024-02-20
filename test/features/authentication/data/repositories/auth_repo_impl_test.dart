@@ -7,10 +7,10 @@ import 'package:dummy_tdd_clean/features/authentication/domain/entities/user.dar
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 
-class MockAuthRemote extends Mock implements AuthRemote {}
+class MockAuthRemote extends Mock implements AuthRemoteDataSource {}
 
 void main() {
-  late AuthRemote authRemoteDS;
+  late AuthRemoteDataSource authRemoteDS;
   late AuthRepoImpl authRepoImpl;
 
   setUp(() {

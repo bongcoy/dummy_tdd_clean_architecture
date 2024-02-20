@@ -9,7 +9,7 @@ import 'package:dummy_tdd_clean/features/authentication/domain/repositories/auth
 class AuthRepoImpl implements AuthRepo {
   AuthRepoImpl(this._remoteDataSource);
 
-  final AuthRemote _remoteDataSource;
+  final AuthRemoteDataSource _remoteDataSource;
 
   @override
   ResultFuture<void> createUser({

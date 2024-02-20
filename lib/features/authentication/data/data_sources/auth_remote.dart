@@ -1,7 +1,7 @@
 import 'package:dummy_tdd_clean/features/authentication/data/models/user_model.dart';
 import 'package:http/http.dart' as http;
 
-abstract class AuthRemote {
+abstract class AuthRemoteDataSource {
   Future<void> createUser({
     required String id,
     required String name,
@@ -12,9 +12,9 @@ abstract class AuthRemote {
   Future<List<UserModel>> getUsers();
 }
 
-class AuthRemoteImpl implements AuthRemote {
+class AuthRemoteDataSourceImpl implements AuthRemoteDataSource {
 
-  AuthRemoteImpl({required http.Client client}) : _client = client;
+  AuthRemoteDataSourceImpl({required http.Client client}) : _client = client;
 
   final http.Client _client;
 
