@@ -2,7 +2,7 @@ import 'package:dartz/dartz.dart';
 import 'package:dummy_tdd_clean/core/errors/exceptions.dart';
 import 'package:dummy_tdd_clean/core/errors/failure.dart';
 import 'package:dummy_tdd_clean/core/utilities/typedef.dart';
-import 'package:dummy_tdd_clean/features/authentication/data/data_sources/auth_remote.dart';
+import 'package:dummy_tdd_clean/features/authentication/data/data_sources/auth_remote_data_source.dart';
 import 'package:dummy_tdd_clean/features/authentication/domain/entities/user.dart';
 import 'package:dummy_tdd_clean/features/authentication/domain/repositories/auth_repo.dart';
 
