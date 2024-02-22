@@ -44,7 +44,7 @@ void main() {
         id: id,
         name: name,
         avatar: avatar,
-        createdAt: createdAt,
+        createdAt: DateTime.parse('2024-02-14T05:45:40.252Z'),
       );
       // 3. Assert
       // *best practices: state the data types for readable code
@@ -54,7 +54,7 @@ void main() {
           id: id,
           name: name,
           avatar: avatar,
-          createdAt: createdAt,
+          createdAt: DateTime.parse('2024-02-14T05:45:40.252Z'),
         ),
       ).called(1);
       verifyNoMoreInteractions(authRemoteDS);
@@ -79,7 +79,7 @@ void main() {
         id: id,
         name: name,
         avatar: avatar,
-        createdAt: createdAt,
+        createdAt: DateTime.parse('2024-02-14T05:45:40.252Z'),
       );
       // 3. Assert
       // *best practices: state the data types for readable code
@@ -96,7 +96,7 @@ void main() {
           id: id,
           name: name,
           avatar: avatar,
-          createdAt: createdAt,
+          createdAt: DateTime.parse('2024-02-14T05:45:40.252Z'),
         ),
       ).called(1);
       verifyNoMoreInteractions(authRemoteDS);

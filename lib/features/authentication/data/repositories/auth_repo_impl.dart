@@ -16,7 +16,7 @@ class AuthRepoImpl implements AuthRepo {
     required String id,
     required String name,
     required String avatar,
-    required String createdAt,
+    required DateTime createdAt,
   }) async {
     try {
       await _remoteDataSource.createUser(

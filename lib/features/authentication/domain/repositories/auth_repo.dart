@@ -8,7 +8,7 @@ abstract class AuthRepo {
     required String id,
     required String name,
     required String avatar,
-    required String createdAt,
+    required DateTime createdAt,
   });
 
   ResultFuture<List<User>> getUsers();

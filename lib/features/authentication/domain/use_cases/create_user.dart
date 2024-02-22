@@ -21,7 +21,7 @@ class CreateUserParams extends Equatable {
   final String id;
   final String name;
   final String avatar;
-  final String createdAt;
+  final DateTime createdAt;
 
   const CreateUserParams({
     required this.id,
@@ -30,12 +30,12 @@ class CreateUserParams extends Equatable {
     required this.createdAt,
   });
 
-  const CreateUserParams.empty()
+  CreateUserParams.empty()
       : this(
           id: '_empty.id',
           name: '_empty.name',
           avatar: '_empty.avatar',
-          createdAt: '_empty.createdAt',
+          createdAt: DateTime.parse('2024-02-14T05:45:40.252Z'),
         );
 
   @override

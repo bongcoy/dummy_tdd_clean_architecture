@@ -21,9 +21,10 @@ void main() {
   setUp(() {
     repo = MockAuthRepo();
     usecase = CreateUser(repo);
+    registerFallbackValue(DateTime);
   });
 
-  const params = CreateUserParams.empty();
+  final params = CreateUserParams.empty();
 
   test("should call AuthRepo.createUser", () async {
     // 1. Arrange

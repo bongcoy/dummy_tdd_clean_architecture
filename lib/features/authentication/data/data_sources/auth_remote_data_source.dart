@@ -11,7 +11,7 @@ abstract class AuthRemoteDataSource {
     required String id,
     required String name,
     required String avatar,
-    required String createdAt,
+    required DateTime createdAt,
   });
 
   Future<List<UserModel>> getUsers();
@@ -27,7 +27,7 @@ class AuthRemoteDataSourceImpl implements AuthRemoteDataSource {
     required String id,
     required String name,
     required String avatar,
-    required String createdAt,
+    required DateTime createdAt,
   }) async {
     try {
       final http.Response response = await _client.post(

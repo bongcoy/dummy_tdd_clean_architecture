@@ -45,7 +45,7 @@ void main() {
           id: 'id',
           name: 'name',
           avatar: 'avatar',
-          createdAt: 'createdAt',
+          createdAt: DateTime.parse('2024-02-14T05:45:40.252Z'),
         ),
         completes,
       );
@@ -78,7 +78,7 @@ void main() {
           id: 'id',
           name: 'name',
           avatar: 'avatar',
-          createdAt: 'createdAt',
+          createdAt: DateTime.parse('2024-02-14T05:45:40.252Z'),
         ),
         throwsA(
           const APIException(message: 'invalid email address', statusCode: 400),
