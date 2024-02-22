@@ -38,13 +38,13 @@ void main() {
       const id = 'id';
       const name = 'id';
       const avatar = 'id';
-      const createdAt = 'id';
+      final createdAt = DateTime.parse('2024-02-14T05:45:40.252Z');
       // 2. Act
       final result = await authRepoImpl.createUser(
         id: id,
         name: name,
         avatar: avatar,
-        createdAt: DateTime.parse('2024-02-14T05:45:40.252Z'),
+        createdAt: createdAt,
       );
       // 3. Assert
       // *best practices: state the data types for readable code
@@ -73,13 +73,13 @@ void main() {
       const id = 'id';
       const name = 'id';
       const avatar = 'id';
-      const createdAt = 'id';
+      final createdAt = DateTime.parse('2024-02-14T05:45:40.252Z');
       // 2. Act
       final result = await authRepoImpl.createUser(
         id: id,
         name: name,
         avatar: avatar,
-        createdAt: DateTime.parse('2024-02-14T05:45:40.252Z'),
+        createdAt: createdAt,
       );
       // 3. Assert
       // *best practices: state the data types for readable code
