@@ -8,22 +8,24 @@ import 'package:meta/meta.dart';
 part 'authentication_state.dart';
 
 class AuthenticationCubit extends Cubit<AuthenticationState> {
-  AuthenticationCubit(
-      {required CreateUser createUser, required GetUsers getUsers})
-      : _createUser = createUser,
+  AuthenticationCubit({
+    required CreateUser createUser,
+    required GetUsers getUsers,
+  })  : _createUser = createUser,
         _getUsers = getUsers,
         super(const AuthenticationInitial()) {}
 
   final CreateUser _createUser;
   final GetUsers _getUsers;
 
-  Future<void> _createUserHandler({
+  Future<void> createUser({
     required String id,
     required String name,
     required String avatar,
     required DateTime createdAt,
   }) async {
     emit(const CreatingUser());
+
     final result = await _createUser(CreateUserParams(
       id: id,
       name: name,
@@ -32,14 +34,12 @@ class AuthenticationCubit extends Cubit<AuthenticationState> {
     ));
 
     result.fold(
-      (l) => emit(AuthenticationError(message: l.errorMessage)),
-      (r) => emit(const UserCreated()),
+      (failure) => emit(AuthenticationError(message: failure.errorMessage)),
+      (_) => emit(const UserCreated()),
     );
   }
 
-  Future<void> _getUserHandler(
-    Emitter<AuthenticationState> emitter,
-  ) async {
+  Future<void> getUsers() async {
     emit(const GettingUsers());
     final result = await _getUsers();
 
