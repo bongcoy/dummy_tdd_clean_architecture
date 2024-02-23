@@ -41,6 +41,7 @@ class AuthenticationCubit extends Cubit<AuthenticationState> {
 
   Future<void> getUsers() async {
     emit(const GettingUsers());
+
     final result = await _getUsers();
 
     result.fold(
